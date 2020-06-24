@@ -13,17 +13,8 @@ function getFiles() {
 
 function processCommand(command) {
     if (command.startsWith("user ")) {
-        userName = command.substring(5);
+        userName = command.substring("user ".length);
         writeComments(getCommentsByUserName(files, userName));
-    } 
-    if (command.startsWith("sort importance")) {
-        writeComments(sortImportantComments(files));
-    }
-    if (command.startsWith("sort user")) {
-        writeComments(sortCommentsByUser(files));
-    }
-    if (command.startsWith("sort date")) {
-        writeComments(sortCommentsByDate(files));
     } else { 
         switch (command) {
             case 'exit':
@@ -34,6 +25,15 @@ function processCommand(command) {
                 break;
             case 'important':
                 writeComments(getImportantComments(files));
+                break;
+            case 'sort importance':
+                writeComments(sortImportantComments(files));
+                break;
+            case 'sort user':
+                writeComments(sortCommentsByUser(files));
+                break;
+            case 'sort date':
+                writeComments(sortCommentsByDate(files));
                 break;
             default:
                 console.log('wrong command');
