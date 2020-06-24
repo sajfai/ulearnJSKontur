@@ -81,7 +81,7 @@ function getCommentsWithToDo(comments) {
 
 function parseComment(comment) {
     const splitedComment = comment.split(";", 3);
-    let [name, dateStr, commentText] = comment.split(";", 3)
+    let [userName, dateStr, commentText] = comment.split(";", 3)
     if (splitedComment.length < 3) {
         return {
             userName: null,
@@ -90,7 +90,6 @@ function parseComment(comment) {
             date: null,
         }
     } else {
-        const userName = name;
         return {
             userName,
             dateStr,
