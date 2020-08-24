@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(51, 33, 209);
+    position: relative;
+    display: inline-block;
+}
+
+.logo5 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgb(116, 3, 3);
+    position: absolute;
+}
+
+.logo7 {
+    width: 90px;
+    height: 40px;
+    margin: 25px 0;
+    border-radius: 50%;
+    border: 5px solid blue;
+    position: absolute;
+}
+
+.logo7SmallCircle {
+    width: 100%;
+    height: 100%;
+    background: blue;
+    border-radius: 50%;
+    transform: scale(0.25);
+}
+
+.logo4BigСircle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgb(116, 3, 3);
+    position: absolute;
+}
+
+.logo4SmallСircle {
+    height: 100%;
+    border-radius: 50%;
+    background: white;
+    transform: scale(0.66);
+}
+
+.logo4CenterСircle {
+    height: 100%;
+    border-radius: 50%;
+    background: rgb(116, 3, 3);
+    transform: scale(0.5);
+}
+
+.modal {
+    width: 640px;
+    min-height: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+    position: relative;
+    background: white;
+}
+
+.cross {
+    width: 100%;
+    min-height: 10px;
+    text-align: right;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(100, 100, 100, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progressExternal {
+    width: 100%;
+    height: 40px;
+    font-size: 26px;
+    text-align: center;
+    position: relative;
+}
+.progressInternal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+}
+.progressInternal.white {
+    background: rgb(206, 240, 238);
+    color: black;
+    clip-path: inset(0 0 0 0);
+    transition-duration: 3s;
+}
+.progressInternal.red {
+    background: rgb(179, 20, 9);
+    color: white;
+}
