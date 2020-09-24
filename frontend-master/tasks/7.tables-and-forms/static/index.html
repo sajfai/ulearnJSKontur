@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Форма выбора питомца</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<main>
-    <h1>Найди себе друга!</h1>
+    <main>
+        <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+        <form action="/pets/orders" method="post">
+            <label>
+                Тип животного
+                <select name="petType">
+                    <option value="cat" selected>Кошка</option>
+                    <option value="dog">Собака</option>
+                    <option value="tiger">Тигр</option>
+                </select>
+            </label>
+            <label>
+                Пол
+                <input type="radio" name="gender" value="boy" checked> Мальчик
+                <input type="radio" name="gender" value="girl"> Девочка
+            </label>
+            <label>
+                Цвет глаз
+                <input type="color" name="eyeColor">
+            </label>
+            <label>
+                Длина хвоста
+                <input type="text" name="tailLength" placeholder="15 см">
+            </label>
+            <label>
+                Имя хозяина
+                <input type="text" name="name" placeholder="Кузя" min = 3 max = 50>
+            </label>
+            <label>
+                Дата рождения
+                <input type="date" name="dateOfBirth">
+            </label>
+            <label>
+                Электронная почта
+                <input type="email" name="email" placeholder="name@domain.com">
+            </label>
+            <label>
+                Номер телефона
+                <input type="tel" name="phone" placeholder="89221753863">
+            </label>
+            <label>
+                Правила
+                <input type="radio" name="rules" value="true"> true
+            </label>
+            <input type="submit" name="submit" value="Отправить">
+            <input type="reset" name="reset" value="Сброс">
+        </form>
 
-</main>
+    </main>
 </body>
+
 </html>

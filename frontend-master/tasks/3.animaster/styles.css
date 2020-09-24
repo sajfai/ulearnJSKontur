@@ -38,6 +38,7 @@
     color: white;
     transition-property: all;
     transition-timing-function: ease;
+    display: inline-block;
 }
 
 .heart {

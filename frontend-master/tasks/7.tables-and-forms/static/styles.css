@@ -21,6 +21,15 @@ h1 {
     text-align: center;
     color: rgba(173,38,164,0.67);
 }
+ 
+label {
+    display: block;
+    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 18px;
+    margin: 30px auto;
+}
 
 .error {
     color: rgba(173,30,24,0.88);
