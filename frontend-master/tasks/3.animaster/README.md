@@ -51,7 +51,10 @@
 
 Но и так:
 
-    animaster().addMove(500, {x: 20, y:20}).play(element);
+    animaster()
+     .addMove(500, {x: 20, y:20})
+     .addMove(500, {x: 20, y:20})
+     .play(element);
 
    Для этого:
     - добавь методы addMove и play в объект, возвращаемый функцией animaster
